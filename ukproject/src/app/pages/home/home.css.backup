@@ -1,0 +1,864 @@
+#hero {
+      width: 100%;
+      min-height: calc(100vh - 72px);
+      padding: 2.5rem 4rem 4rem;
+}
+
+#hero #hero-one {
+      width: 100%;
+}
+
+#hero .tagline {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: #555;
+}
+
+#hero .tagline .line {
+      display: inline-block;
+      width: 32px;
+      height: 2px;
+      background-color: red;
+}
+
+#hero #hero-one h1 {
+      font-size: 110px;
+      font-weight: 700;
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+      margin: 0;
+}
+
+#hero #hero-one h1:first-of-type {
+      margin-top: 1.5rem;
+}
+
+#hero .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 2.5rem;
+}
+
+#hero .hero-actions .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.65rem;
+      background-color: #000000;
+      color: #ffffff;
+      border: 1px solid #000000;
+      padding: 0.85rem 1.8rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      border-radius: 9999px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+#hero .hero-actions .btn-primary:hover {
+      background-color: #27272a;
+      border-color: #27272a;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+#hero .hero-actions .btn-primary:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#hero .hero-actions .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.65rem;
+      background-color: transparent;
+      color: #111111;
+      border: 1px solid rgba(0, 0, 0, 0.25);
+      padding: 0.85rem 1.8rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      border-radius: 9999px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#hero .hero-actions .btn-secondary:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+      border-color: #000000;
+      transform: translateY(-1px);
+}
+
+#hero .hero-actions .btn-secondary:active {
+      transform: translateY(0);
+}
+
+#hero .hero-actions .btn-arrow {
+      width: 14px;
+      height: 14px;
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      flex-shrink: 0;
+}
+
+#hero .hero-actions .btn-primary:hover .btn-arrow {
+      transform: translate(2px, -2px);
+}
+
+#hero .hero-actions .btn-secondary:hover .btn-arrow {
+      transform: translateY(2px);
+}
+
+#hero #hero-two {
+      margin-top: 4rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 2rem;
+}
+
+#hero #hero-two #hero-two-left {
+      width: 50%;
+      height: 100%;
+}
+
+#hero #hero-two #hero-two-left p {
+      width: 85%;
+      font-size: 1.4rem;
+      line-height: 1.55;
+      font-weight: 400;
+      color: #555;
+}
+
+#hero #hero-two #hero-two-right {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+}
+
+#hero #hero-two #hero-two-right .idea-box {
+      max-width: 400px;
+      width: 100%;
+}
+
+#hero #hero-two #hero-two-right h3 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #111;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+}
+
+#hero #hero-two #hero-two-right p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: #555;
+      font-weight: 400;
+}
+
+#trustedby {
+      width: 100%;
+      min-height: 90px;
+      background-color: #000000;
+      padding: 2.5rem 4rem;
+      display: flex;
+      align-items: center;
+      gap: 3.5rem;
+      overflow: hidden;
+}
+
+#trustedby .trusted-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-shrink: 0;
+      white-space: nowrap;
+}
+
+#trustedby .trusted-header .line {
+      display: inline-block;
+      width: 32px;
+      height: 2px;
+      background-color: red;
+}
+
+#trustedby .trusted-header .red-dot {
+      width: 7px;
+      height: 7px;
+      background-color: red;
+      border-radius: 50%;
+      display: inline-block;
+      box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.25);
+      animation: red-dot-pulse 2s infinite ease-in-out;
+}
+
+@keyframes red-dot-pulse {
+      0% {
+            box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.6);
+      }
+
+      70% {
+            box-shadow: 0 0 0 6px rgba(255, 0, 0, 0);
+      }
+
+      100% {
+            box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+      }
+}
+
+#trustedby .trusted-header p {
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin: 0;
+}
+
+/* Infinite Marquee Scroll */
+#trustedby .marquee-wrapper {
+      flex: 1;
+      overflow: hidden;
+      position: relative;
+      mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+      -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+#trustedby .marquee-track {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+      width: max-content;
+      animation: marquee-scroll 28s linear infinite;
+}
+
+#trustedby .marquee-track:hover {
+      animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+      0% {
+            transform: translateX(0);
+      }
+
+      100% {
+            transform: translateX(-50%);
+      }
+}
+
+#trustedby .marquee-item {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: rgba(255, 255, 255, 0.55);
+      white-space: nowrap;
+      cursor: default;
+      transition: color 0.25s ease, transform 0.25s ease;
+}
+
+#trustedby .marquee-item .dot {
+      width: 6px;
+      height: 6px;
+      background-color: red;
+      border-radius: 50%;
+      display: inline-block;
+      flex-shrink: 0;
+}
+
+#trustedby .marquee-item:hover {
+      color: #ffffff;
+      transform: translateY(-1px);
+}
+
+
+#theproblem {
+      width: 100%;
+      max-width: 100%;
+      height: 85vh;
+      background-color: #ECECE6;
+      border: 1px solid black;
+}
+
+#theproblem-top {
+      width: 100%;
+      height: 70vh;
+      display: flex;
+}
+
+#theproblem-top #tagline-left {
+      width: 30%;
+      height: 100%;
+      margin-left: 30px;
+      display: flex;
+      flex-direction: column;
+}
+
+#theproblem-top #tagline {
+      width: 100%;
+      height: 70%;
+}
+
+#theproblem-top #tagline-bottom {
+      width: 100%;
+      height: 30%;
+}
+
+#theproblem-top #tagline-bottom p {
+      color: #000000;
+      text-align: left;
+      max-width: 100%;
+      font-size: 1.5rem;
+      line-height: 1.6;
+      margin-top: 0.5rem;
+}
+
+#theproblem-top #tagline-right {
+      width: 70%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+#theproblem-top #tagline-right h1 {
+      font-size: 5rem;
+      font-weight: 700;
+}
+
+
+
+
+#theproblem-top .tagline1 {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: #555;
+      text-transform: uppercase;
+}
+
+#theproblem-top .line {
+      display: inline-block;
+      width: 32px;
+      height: 2px;
+      background-color: red;
+}
+
+
+
+#theproblem-bottom {
+      width: 100%;
+      height: auto;
+      background-color: #ECECE6;
+}
+
+.theproblems {
+      width: 100%;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      padding: 2rem 4rem;
+      cursor: pointer;
+      transition: background-color 0.25s ease;
+}
+
+.theproblems:hover,
+.theproblems.active {
+      background-color: rgba(0, 0, 0, 0.03);
+}
+
+.theproblems .problem-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+}
+
+.theproblems .problem-number {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #777;
+      letter-spacing: 0.05em;
+      min-width: 40px;
+}
+
+.theproblems .problem-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #111;
+      letter-spacing: -0.02em;
+      flex: 1;
+      margin: 0;
+      transition: color 0.2s ease;
+}
+
+.theproblems:hover .problem-title,
+.theproblems.active .problem-title {
+      color: #000;
+}
+
+.theproblems .problem-arrow {
+      font-size: 2rem;
+      font-weight: 300;
+      color: #444;
+      line-height: 1;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.theproblems .problem-arrow.rotated {
+      transform: rotate(45deg);
+}
+
+.theproblems .problem-matter {
+      padding-top: 1rem;
+      padding-left: calc(40px + 1.5rem);
+      max-width: 800px;
+      animation: fadeInMatter 0.3s ease-out;
+}
+
+.theproblems .problem-matter p {
+      font-size: 1.15rem;
+      line-height: 1.6;
+      color: #333;
+      margin: 0;
+}
+
+@keyframes fadeInMatter {
+      from {
+            opacity: 0;
+            transform: translateY(-6px);
+      }
+
+      to {
+            opacity: 1;
+            transform: translateY(0);
+      }
+}
+
+
+
+
+/* ==========================================================================
+   WHAT WE DO (BLACK BG, #ECECE6 TEXT)
+   ========================================================================== */
+#whatwedo {
+      width: 100%;
+      max-width: 100%;
+      height: 85vh;
+      background-color: #000000;
+      color: #ECECE6;
+}
+
+#whatwedo-top {
+      width: 100%;
+      height: 70vh;
+      display: flex;
+}
+
+#whatwedo-top #tagline-left {
+      width: 30%;
+      height: 100%;
+      margin-left: 30px;
+      display: flex;
+      flex-direction: column;
+}
+
+#whatwedo-top #tagline {
+      width: 100%;
+      height: 80%;
+}
+
+#whatwedo-top #tagline-bottom {
+      width: 100%;
+
+      height: 20%;
+}
+
+#whatwedo-top #tagline-bottom p {
+      color: #ECECE6;
+      text-align: left;
+      max-width: 100%;
+      font-size: 1.5rem;
+
+      line-height: 1.6;
+}
+
+#whatwedo-top #tagline-right {
+      width: 70%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+#whatwedo-top #tagline-right h1 {
+      font-size: 5rem;
+      font-weight: 700;
+      color: #ECECE6;
+}
+
+#whatwedo-top .tagline1 {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: #ECECE6;
+      text-transform: uppercase;
+}
+
+#whatwedo-top .line {
+      display: inline-block;
+      width: 32px;
+      height: 2px;
+      background-color: red;
+}
+
+
+/* ==========================================================================
+   WHAT WE DO DEVELOPMENT (#whatwedodevlop)
+   Write your CSS for what we do below here
+   ========================================================================== */
+#whatwedodevlop {
+      width: 100%;
+      background-color: #000000;
+      color: #ECECE6;
+      height: 150vh;
+      /* border: 1px solid pink; */
+}
+
+#whatwedodevlop-top {
+      width: 100%;
+      height: 50%;
+      border: 1px dotted red;
+      display: flex;
+
+}
+
+#whatwedodevlop-top #mobileandappdevlop {
+      width: 50%;
+      height: 100%;
+      border-right: 1px solid skyblue;
+      float: left;
+      display: flex;
+}
+
+#whatwedodevlop-top #besidemobileandappdevlop {
+      width: 50%;
+      height: 100%;
+      border-right: 1px solid red;
+      float: right;
+
+}
+
+#mobileleandappdevlopleft {
+      width: 70%;
+      height: 100%;
+      border: 1px solid lawngreen;
+}
+
+#mobileleandappdevlopright {
+      width: 30%;
+      height: 100%;
+      border: 1px solid pink;
+}
+
+#mobiletop {
+      width: 100%;
+      height: 55%;
+      border-bottom: 1px solid blue
+}
+
+#mobilebottom {
+      width: 100%;
+      height: 45%;
+      border: 1px solid red
+}
+
+#mobilebesidetop {
+      width: 100%;
+      height: 55%;
+      border-bottom: 1px solid red
+}
+
+#mobilebesidebottom {
+      width: 100%;
+      height: 45%;
+      border: 1px solid pink;
+}
+
+
+/* ==========================================================================
+   ==========================================================================
+   ALL RESPONSIVE MEDIA QUERIES (KEPT AT THE VERY END OF FILE)
+   Order:
+   1. TABLET SCREENS       (max-width: 1024px)
+   2. MOBILE SCREENS       (max-width: 768px)
+   3. SMALL MOBILE SCREENS (max-width: 480px)
+   ==========================================================================
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. TABLET SCREENS (max-width: 1024px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+      #hero {
+            padding: 2rem 2.5rem 3rem;
+      }
+
+      #hero #hero-one h1 {
+            font-size: 76px;
+      }
+
+      #hero #hero-two {
+            flex-direction: column;
+            margin-top: 2.5rem;
+      }
+
+      #hero #hero-two #hero-two-left,
+      #hero #hero-two #hero-two-right {
+            width: 100%;
+      }
+
+      #hero #hero-two #hero-two-right {
+            justify-content: flex-start;
+            margin-top: 1.5rem;
+      }
+
+      #hero #hero-two #hero-two-right .idea-box {
+            max-width: 100%;
+      }
+
+      #hero #hero-two #hero-two-right h3 {
+            font-size: 1.2rem;
+      }
+
+      #hero #hero-two #hero-two-right p {
+            font-size: 1rem;
+      }
+
+      #hero #hero-two #hero-two-left p {
+            width: 100%;
+            font-size: 1.2rem;
+      }
+
+      #trustedby {
+            padding: 2rem 2.5rem;
+      }
+
+      /* The Problem & What We Do - Tablet */
+      #theproblem,
+      #whatwedo {
+            width: 100%;
+            height: auto;
+            min-height: auto;
+            padding: 3rem 2.5rem 1.5rem;
+            border: none;
+      }
+
+      #theproblem-top,
+      #whatwedo-top {
+            flex-direction: column;
+            height: auto;
+            min-height: auto;
+            gap: 2rem;
+      }
+
+      #theproblem-top #tagline-left,
+      #whatwedo-top #tagline-left {
+            width: 100%;
+            height: auto;
+            margin-left: 0;
+            gap: 1rem;
+      }
+
+      #theproblem-top #tagline,
+      #whatwedo-top #tagline {
+            height: auto;
+      }
+
+      #theproblem-top #tagline-bottom,
+      #whatwedo-top #tagline-bottom {
+            height: auto;
+      }
+
+      #theproblem-top #tagline-bottom p,
+      #whatwedo-top #tagline-bottom p {
+            max-width: 75%;
+      }
+
+      #theproblem-top #tagline-right,
+      #whatwedo-top #tagline-right {
+            width: 100%;
+            height: auto;
+            justify-content: flex-start;
+      }
+
+      #theproblem-top #tagline-right h1,
+      #whatwedo-top #tagline-right h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+      }
+
+      #theproblem-bottom {
+            height: auto;
+            min-height: auto;
+            margin-top: 0;
+      }
+
+      .theproblems {
+            padding: 1.75rem 2.5rem;
+      }
+}
+
+/* --------------------------------------------------------------------------
+   2. MOBILE SCREENS (max-width: 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+      #hero {
+            padding: 1.5rem 1.25rem 2.5rem;
+      }
+
+      #trustedby {
+            padding: 1.5rem 1.25rem;
+      }
+
+      #hero .tagline {
+            font-size: 0.75rem;
+      }
+
+      #hero #hero-one h1 {
+            font-size: 48px;
+            line-height: 1.0;
+      }
+
+      #hero #hero-one h1:first-of-type {
+            margin-top: 1rem;
+      }
+
+      #hero #hero-two {
+            margin-top: 2rem;
+      }
+
+      #hero #hero-two #hero-two-left p {
+            font-size: 1.05rem;
+            line-height: 1.5;
+      }
+
+      #hero #hero-two #hero-two-right h3 {
+            font-size: 1.1rem;
+      }
+
+      #hero #hero-two #hero-two-right p {
+            font-size: 0.95rem;
+            line-height: 1.55;
+      }
+
+      #hero .hero-actions {
+            margin-top: 2rem;
+            flex-wrap: wrap;
+      }
+
+      /* The Problem & What We Do - Mobile */
+      #theproblem,
+      #whatwedo {
+            padding: 2.5rem 1.25rem 1rem;
+            width: 100%;
+            height: auto;
+            min-height: auto;
+            border: none;
+      }
+
+      #theproblem-top,
+      #whatwedo-top {
+            height: auto;
+            min-height: auto;
+            gap: 1.25rem;
+      }
+
+      #theproblem-bottom {
+            margin-top: 0;
+            min-height: auto;
+      }
+
+      #theproblem-top #tagline-left,
+      #whatwedo-top #tagline-left {
+            width: 100%;
+            margin-left: 0;
+            height: auto;
+      }
+
+      #theproblem-top #tagline-bottom p,
+      #whatwedo-top #tagline-bottom p {
+            max-width: 100%;
+            font-size: 0.95rem;
+      }
+
+      #theproblem-top #tagline-right h1,
+      #whatwedo-top #tagline-right h1 {
+            font-size: 2.25rem;
+            line-height: 1.15;
+      }
+
+      .theproblems {
+            padding: 1.5rem 1.25rem;
+      }
+
+      .theproblems .problem-title {
+            font-size: 1.25rem;
+      }
+
+      .theproblems .problem-matter {
+            padding-left: 0;
+      }
+
+      .theproblems .problem-matter p {
+            font-size: 1rem;
+      }
+}
+
+/* --------------------------------------------------------------------------
+   3. SMALL MOBILE SCREENS (max-width: 480px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+      #hero #hero-one h1 {
+            font-size: 38px;
+      }
+
+      #hero .hero-actions {
+            flex-direction: column;
+            width: 100%;
+            gap: 0.75rem;
+      }
+
+      #hero .hero-actions .btn-primary,
+      #hero .hero-actions .btn-secondary {
+            width: 100%;
+            text-align: center;
+            padding: 0.8rem 1.4rem;
+      }
+
+      #hero #hero-two #hero-two-left p {
+            font-size: 0.95rem;
+      }
+
+      /* The Problem & What We Do - Small Mobile */
+      #theproblem-top #tagline-right h1,
+      #whatwedo-top #tagline-right h1 {
+            font-size: 1.85rem;
+      }
+}

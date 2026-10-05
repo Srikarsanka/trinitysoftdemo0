@@ -1,0 +1,845 @@
+<div id="hero">
+      <div id="hero-one">
+            <p class="tagline">
+                  <span class="line"></span>
+                  SOFTWARE.SYSTEM.AI
+            </p>
+            <h1>Your</h1>
+            <h1>problems.</h1>
+            <h1 style="color:navy">Solved.</h1>
+            <h1>With</h1>
+            <h1>technology.</h1>
+
+            <div class="hero-actions">
+                  <button class="btn-primary">
+                        <span>Start conversation</span>
+                        <svg class="btn-arrow" viewBox="0 0 24 24" width="15" height="15" fill="none"
+                              stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                              <line x1="7" y1="17" x2="17" y2="7"></line>
+                              <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                  </button>
+                  <button class="btn-secondary">
+                        <span>Explore what we do</span>
+                        <svg class="btn-arrow" viewBox="0 0 24 24" width="15" height="15" fill="none"
+                              stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                              <line x1="12" y1="5" x2="12" y2="19"></line>
+                              <polyline points="19 12 12 19 5 12"></polyline>
+                        </svg>
+                  </button>
+            </div>
+      </div>
+      <div id="hero-two">
+            <div id="hero-two-left">
+                  <p>TrinitySoft builds, modernises and supports the technology behind growing businesses — from custom
+                        software and systems integration to automation, AI and managed IT.</p>
+            </div>
+            <div id="hero-two-right">
+                  <div class="idea-box">
+                        <h3>The Idea.</h3>
+                        <p>Technology shouldn't create another problem to manage. It should remove the problem you
+                              already have.</p>
+                  </div>
+            </div>
+
+      </div>
+</div>
+
+<div id="trustedby">
+      <div class="trusted-header">
+            <span class="line"></span>
+            <span class="red-dot"></span>
+            <p>Trusted By</p>
+      </div>
+
+      <div class="marquee-wrapper">
+            <div class="marquee-track">
+                  <!-- First set -->
+                  <div class="marquee-item"><span class="dot"></span> Carfax</div>
+                  <div class="marquee-item"><span class="dot"></span> Govinda's</div>
+                  <div class="marquee-item"><span class="dot"></span> MRIScanlondon</div>
+                  <div class="marquee-item"><span class="dot"></span> Main Line</div>
+                  <div class="marquee-item"><span class="dot"></span> PlumPoT Media</div>
+                  <div class="marquee-item"><span class="dot"></span> Sterling Corporation</div>
+                  <div class="marquee-item"><span class="dot"></span> IStone</div>
+                  <div class="marquee-item"><span class="dot"></span> Spatial Hawk</div>
+                  <div class="marquee-item"><span class="dot"></span> RMGL</div>
+                  <div class="marquee-item"><span class="dot"></span> Rao Bar & Resturant</div>
+
+                  <!-- Duplicate set for seamless loop -->
+                  <div class="marquee-item"><span class="dot"></span> Carfax</div>
+                  <div class="marquee-item"><span class="dot"></span> Govinda's</div>
+                  <div class="marquee-item"><span class="dot"></span> MRIScanlondon</div>
+                  <div class="marquee-item"><span class="dot"></span> Main Line</div>
+                  <div class="marquee-item"><span class="dot"></span> PlumPoT Media</div>
+                  <div class="marquee-item"><span class="dot"></span> Sterling Corporation</div>
+                  <div class="marquee-item"><span class="dot"></span> IStone</div>
+                  <div class="marquee-item"><span class="dot"></span> Spatial Hawk</div>
+                  <div class="marquee-item"><span class="dot"></span> RMGL</div>
+                  <div class="marquee-item"><span class="dot"></span> Rao Bar & Resturant</div>
+            </div>
+      </div>
+</div>
+<div id="theproblem">
+      <div id="theproblem-top">
+            <div id="tagline-left">
+                  <div id="tagline">
+                        <br><br>
+                        <p class="tagline1">
+                              <span class="line"></span>
+                              01 The Problem
+                        </p>
+                  </div>
+                  <div id="tagline-bottom">
+                        <p> But disconnected systems, manual processes and outdated software can quietly make business
+                              harder than it needs to be.</p>
+                  </div>
+            </div>
+            <div id="tagline-right">
+                  <h1>Technology Should<br>Make work easier.</h1>
+
+
+            </div>
+
+
+      </div>
+</div>
+
+<div id="theproblem-bottom">
+      <div class="theproblems" *ngFor="let item of problems; let i = index" [class.active]="activeProblemIndex === i"
+            (click)="toggleProblem(i)" (mouseenter)="onHover(i)">
+            <div class="problem-header">
+                  <span class="problem-number">{{ item.number }}</span>
+                  <h3 class="problem-title">{{ item.title }}</h3>
+                  <span class="problem-arrow" [class.rotated]="activeProblemIndex === i">+</span>
+            </div>
+            <div class="problem-matter" *ngIf="activeProblemIndex === i">
+                  <p><span style="color:navy;font-weight:500">Solution: </span>{{ item.matter }}</p>
+            </div>
+      </div>
+</div>
+
+<div id="whatwedo">
+      <div id="whatwedo-top">
+            <div id="tagline-left">
+                  <div id="tagline">
+                        <br>
+                        <br>
+                        <p class="tagline1">
+                              <span class="line"></span>
+                              02 What We Do
+                        </p>
+                  </div>
+                  <br><br><br>
+                  <div id="tagline-bottom">
+                        <p>We build, modernise and support the technology behind growing businesses custom software,
+                              integrations and AI.</p>
+                  </div>
+            </div>
+            <div id="tagline-right">
+                  <h1>One technology <br>partner. Many ways to<br> move forward.</h1>
+            </div>
+      </div>
+</div>
+<div id="whatwedodevlop">
+      <div id="whatwedodevlop-top">
+            <div id="mobileandappdevlop">
+                  <div id="mobileleandappdevlopleft">
+                        <div id="mobiletop">
+                              <h2>Mobile &amp; Web App<br>Development</h2>
+                              <p>Floating minimalist app commitment and intensating tech hint inspired by Vercel, Linear
+                                    and stripe.</p>
+                        </div>
+                        <div id="mobilebottom">
+                              <div id="diverp">
+                                    <div class="diverp-content">
+                                          <h3>Enterprise System<br>Integration</h3>
+                                          <p>Solutions to loose enterprise system integration and data synthesis.</p>
+                                    </div>
+                                    <a href="javascript:void(0)" class="card-learn-more">
+                                          Learn more <span class="arrow">&rarr;</span>
+                                    </a>
+                              </div>
+                        </div>
+                  </div>
+                  <div id="mobileleandappdevlopright">
+                        <div id="mobilebesidetop">
+                              <!-- Floating Dark Glass Phone Mockup -->
+                              <div class="device-phone">
+                                    <div class="phone-frame">
+                                          <div class="phone-speaker">
+                                                <div class="phone-dynamic-island"></div>
+                                          </div>
+                                          <div class="phone-screen">
+                                                <div class="phone-status-header">
+                                                      <div class="phone-status-left"></div>
+                                                      <div class="phone-status-right">
+                                                            <span class="phone-accent-dash"></span>
+                                                            <span class="phone-accent-dash"></span>
+                                                      </div>
+                                                </div>
+                                                <div class="phone-glass-card">
+                                                      <div class="phone-glass-header">
+                                                            <div class="phone-app-icon"></div>
+                                                            <div class="phone-card-dots">&bull;&bull;&bull;</div>
+                                                      </div>
+                                                      <div class="phone-neon-bar"></div>
+                                                      <div class="phone-skeleton-lines">
+                                                            <div class="sk-line sk-line-long"></div>
+                                                            <div class="sk-line sk-line-short"></div>
+                                                      </div>
+                                                </div>
+                                                <div class="phone-pagination">
+                                                      <span class="pg-dot active"></span>
+                                                      <span class="pg-dot"></span>
+                                                      <span class="pg-dot"></span>
+                                                </div>
+                                                <div class="phone-bottom-nav">
+                                                      <div class="nav-dash"></div>
+                                                      <div class="nav-arrow-circle">
+                                                            <span>&rarr;</span>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <div id="mobilebesidebottom">
+                              <a href="javascript:void(0)" class="card-learn-more">
+                                    Learn more <span class="arrow">&rarr;</span>
+                              </a>
+                        </div>
+                  </div>
+            </div>
+            <div id="besidemobileandappdevlop">
+                  <div class="services-panel-header">
+                        <span class="services-badge">
+                              <span class="services-dot"></span>
+                              Core Capabilities
+                        </span>
+                        <h3>Our Solutions</h3>
+                  </div>
+                  <div class="services-list">
+                        <!-- IOT -->
+                        <div class="service-item">
+                              <div class="service-icon-box">
+                                    <i class="fa-solid fa-microchip"></i>
+                              </div>
+                              <div class="service-info">
+                                    <h4>IOT</h4>
+                                    <p>Smart sensors, telemetry &amp; edge devices</p>
+                              </div>
+                              <span class="service-arrow">&rarr;</span>
+                        </div>
+
+                        <!-- System Integration -->
+                        <div class="service-item">
+                              <div class="service-icon-box">
+                                    <i class="fa-solid fa-network-wired"></i>
+                              </div>
+                              <div class="service-info">
+                                    <h4>System Integration</h4>
+                                    <p>API, ERP &amp; CRM data synchronisation</p>
+                              </div>
+                              <span class="service-arrow">&rarr;</span>
+                        </div>
+
+                        <!-- IT Consulting -->
+                        <div class="service-item">
+                              <div class="service-icon-box">
+                                    <i class="fa-solid fa-lightbulb"></i>
+                              </div>
+                              <div class="service-info">
+                                    <h4>IT Consulting</h4>
+                                    <p>Strategic tech advisory &amp; roadmap planning</p>
+                              </div>
+                              <span class="service-arrow">&rarr;</span>
+                        </div>
+
+                        <!-- Manage IT -->
+                        <div class="service-item">
+                              <div class="service-icon-box">
+                                    <i class="fa-solid fa-server"></i>
+                              </div>
+                              <div class="service-info">
+                                    <h4>Manage IT</h4>
+                                    <p>Cloud infrastructure, 24/7 uptime &amp; security</p>
+                              </div>
+                              <span class="service-arrow">&rarr;</span>
+                        </div>
+
+                        <!-- Automation -->
+                        <div class="service-item">
+                              <div class="service-icon-box">
+                                    <i class="fa-solid fa-robot"></i>
+                              </div>
+                              <div class="service-info">
+                                    <h4>Automation</h4>
+                                    <p>AI workflows, pipeline orchestration &amp; RPA</p>
+                              </div>
+                              <span class="service-arrow">&rarr;</span>
+                        </div>
+
+                        <!-- Digital Marketing -->
+                        <div class="service-item">
+                              <div class="service-icon-box">
+                                    <i class="fa-solid fa-chart-line"></i>
+                              </div>
+                              <div class="service-info">
+                                    <h4>Digital Marketing</h4>
+                                    <p>Growth strategy, data analytics &amp; campaigns</p>
+                              </div>
+                              <span class="service-arrow">&rarr;</span>
+                        </div>
+
+                        <!-- Product Engineering -->
+                        <div class="service-item">
+                              <div class="service-icon-box">
+                                    <i class="fa-solid fa-cubes-stacked"></i>
+                              </div>
+                              <div class="service-info">
+                                    <h4>Product Engineering</h4>
+                                    <p>Full-cycle software development &amp; scaling</p>
+                              </div>
+                              <span class="service-arrow">&rarr;</span>
+                        </div>
+                  </div>
+            </div>
+      </div>
+</div>
+<div id="thenumbers">
+      <div class="thenumbers-container">
+            <div class="thenumbers-header">
+                  <h2>The numbers behind the promise</h2>
+                  <p>Software built, modernised, and kept running for growing UK businesses since 2010.</p>
+            </div>
+
+            <div class="thenumbers-grid">
+                  <!-- Metric 1: 15+ Years in business -->
+                  <div class="metric-card metric-gold">
+                        <div class="metric-accent-bar"></div>
+                        <div class="metric-content">
+                              <span class="metric-value">15+</span>
+                              <span class="metric-label">Years in business</span>
+                              <span class="metric-sublabel">= SINCE 2010, SAME FOCUS THROUGHOUT</span>
+                        </div>
+                  </div>
+
+                  <!-- Metric 2: ~19 Specialists -->
+                  <div class="metric-card metric-purple">
+                        <div class="metric-accent-bar"></div>
+                        <div class="metric-content">
+                              <span class="metric-value">~19</span>
+                              <span class="metric-label">Specialists on the team</span>
+                              <span class="metric-sublabel">= IN-HOUSE, UK-BASED</span>
+                        </div>
+                  </div>
+
+                  <!-- Metric 3: London UK HQ -->
+                  <div class="metric-card metric-blue">
+                        <div class="metric-accent-bar"></div>
+                        <div class="metric-content">
+                              <span class="metric-value metric-value-serif">London</span>
+                              <span class="metric-label">UK HQ in Barking</span>
+                              <span class="metric-sublabel">= EAST LONDON, UK &amp; EU DELIVERY</span>
+                        </div>
+                  </div>
+            </div>
+
+            <!-- Footer Compliance Bar -->
+            <div class="thenumbers-footer">
+                  <div class="compliance-title">SECURITY &amp; COMPLIANCE, BUILT IN</div>
+                  <div class="compliance-divider"></div>
+                  <div class="compliance-items">
+                        <div class="compliance-item">
+                              <i class="fa-regular fa-circle-check"></i>
+                              <span>GDPR compliant</span>
+                        </div>
+                        <div class="compliance-item">
+                              <i class="fa-solid fa-location-dot"></i>
+                              <span>UK-based &amp; UK-hosted</span>
+                        </div>
+                        <div class="compliance-item">
+                              <i class="fa-solid fa-shield-halved"></i>
+                              <span>Secure by design</span>
+                        </div>
+                  </div>
+            </div>
+      </div>
+</div>
+
+<div id="futurebusiness">
+      <div class="futurebusiness-container">
+            <div class="futurebusiness-header">
+                  <h2>Build the business your<br>future demands.</h2>
+                  <p>AI-powered business solutions designed to streamline operations, automate processes, and help your
+                        business scale with confidence.</p>
+                  <a href="javascript:void(0)" class="view-all-solutions">
+                        VIEW ALL SOLUTIONS <span class="arrow">&rarr;</span>
+                  </a>
+            </div>
+
+            <div class="futurebusiness-content">
+                  <!-- Left: Large Featured AI ERP & CRM Card -->
+                  <div class="featured-erp-card">
+                        <div class="featured-erp-badge">
+                              <span class="erp-dot"></span>
+                              AI, WOVEN IN
+                        </div>
+                        <div class="featured-erp-icon">
+                              <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3>AI ERP &amp; CRM</h3>
+                        <p class="featured-erp-desc">The operational system your business runs on, AI-native and built
+                              around how you work.</p>
+
+                        <ul class="featured-erp-list">
+                              <li>
+                                    <span class="bullet-square"></span>
+                                    <span>Self hosted &amp; private deployments</span>
+                              </li>
+                              <li>
+                                    <span class="bullet-square"></span>
+                                    <span>Runs on your own data</span>
+                              </li>
+                              <li>
+                                    <span class="bullet-square"></span>
+                                    <span>Conversational, not bolted-on</span>
+                              </li>
+                        </ul>
+                  </div>
+
+                  <!-- Right: 2x3 Grid of 6 Modular Solutions -->
+                  <div class="solutions-grid">
+                        <!-- 1. Inventory -->
+                        <div class="solution-card">
+                              <div class="solution-icon-box">
+                                    <i class="fa-solid fa-cube"></i>
+                              </div>
+                              <h4>Inventory</h4>
+                              <p>Live stock across every warehouse, with barcode receiving, FIFO valuation, and alerts
+                                    before you run out.</p>
+                        </div>
+
+                        <!-- 2. Sales & CRM -->
+                        <div class="solution-card">
+                              <div class="solution-icon-box">
+                                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                              </div>
+                              <h4>Sales &amp; CRM</h4>
+                              <p>Enquiry to invoice in one place: quotes, orders, B2B and B2C, payments tracked end to
+                                    end.</p>
+                        </div>
+
+                        <!-- 3. Procurement -->
+                        <div class="solution-card">
+                              <div class="solution-icon-box">
+                                    <i class="fa-regular fa-clipboard"></i>
+                              </div>
+                              <h4>Procurement</h4>
+                              <p>Purchase orders, mobile goods-in, landed cost and multi-currency, with supplier
+                                    performance you can see.</p>
+                        </div>
+
+                        <!-- 4. Finance -->
+                        <div class="solution-card">
+                              <div class="solution-icon-box">
+                                    <i class="fa-solid fa-link"></i>
+                              </div>
+                              <h4>Finance</h4>
+                              <p>Open Banking, bank reconciliation and VAT, plus AI credit control that chases late
+                                    payers for you.</p>
+                        </div>
+
+                        <!-- 5. HR -->
+                        <div class="solution-card">
+                              <div class="solution-icon-box">
+                                    <i class="fa-solid fa-user-group"></i>
+                              </div>
+                              <h4>HR</h4>
+                              <p>Employees, leave, attendance and documents, without the spreadsheets.</p>
+                        </div>
+
+                        <!-- 6. Administration -->
+                        <div class="solution-card">
+                              <div class="solution-icon-box">
+                                    <i class="fa-regular fa-file-lines"></i>
+                              </div>
+                              <h4>Administration</h4>
+                              <p>Templates, workflow automation, contracts, and a full audit trail behind everything.
+                              </p>
+                        </div>
+                  </div>
+            </div>
+      </div>
+</div>
+
+<!-- ==========================================================================
+     05b / SERVICES SECTION
+     ========================================================================== -->
+<div id="our-services">
+      <div class="our-services-container">
+
+            <div class="our-services-header">
+                  <p class="our-services-eyebrow">
+                        <span class="line"></span>
+                        BYPASS THE CORE SYSTEM
+                  </p>
+                  <h2>Specific capabilities,<br>on request.</h2>
+                  <p class="our-services-sub">When you need something outside the core system, we build it as a focused
+                        engagement.</p>
+            </div>
+
+            <div class="our-services-grid">
+
+                  <div class="our-service-card">
+                        <div class="our-service-icon">
+                              <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <h4>Custom AI &amp; ML</h4>
+                        <p>A specific model, pipeline, or AI feature for your own systems, built to fit.</p>
+                  </div>
+
+                  <div class="our-service-card">
+                        <div class="our-service-icon">
+                              <i class="fa-solid fa-arrow-up-right-dots"></i>
+                        </div>
+                        <h4>Digital Transformation</h4>
+                        <p>Modernise legacy systems and the ways of working around them.</p>
+                  </div>
+
+                  <div class="our-service-card">
+                        <div class="our-service-icon">
+                              <i class="fa-solid fa-cloud"></i>
+                        </div>
+                        <h4>Cloud Infrastructure</h4>
+                        <p>Design, migrate, and run workloads on cloud that fits the budget.</p>
+                  </div>
+
+                  <div class="our-service-card">
+                        <div class="our-service-icon">
+                              <i class="fa-solid fa-code-branch"></i>
+                        </div>
+                        <h4>DevOps &amp; CI/CD</h4>
+                        <p>Ship reliably with automated pipelines and sensible release practice.</p>
+                  </div>
+
+                  <div class="our-service-card">
+                        <div class="our-service-icon">
+                              <i class="fa-solid fa-chart-column"></i>
+                        </div>
+                        <h4>Data Analytics &amp; Business Intelligence</h4>
+                        <p>Turn the data you already have into decisions you can act on.</p>
+                  </div>
+
+            </div>
+
+            <a href="javascript:void(0)" class="our-services-cta">
+                  START A CONVERSATION &nearr;
+            </a>
+
+      </div>
+</div>
+
+<!-- ==========================================================================
+     05c / WHY TRINITYSOFT SECTION
+     ========================================================================== -->
+<div id="why-trinity">
+      <div class="why-trinity-container">
+
+            <!-- Header -->
+            <div class="why-trinity-header">
+                  <h2 class="why-trinity-title">Why Trinitysoft?</h2>
+                  <p class="why-trinity-sub">From the first fix to the hundredth, we're beside you.</p>
+            </div>
+
+            <!-- Top row: 2 wide cards -->
+            <div class="wt-row wt-row-top">
+                  <div class="wt-card wt-card--wide wt-delay-1">
+                        <div class="wt-card-icon"><i class="fa-solid fa-ban"></i></div>
+                        <h4>The Honest "No"</h4>
+                        <p>If you don't need us, we'll tell you — and save you the money.</p>
+                        <div class="wt-card-glow"></div>
+                  </div>
+                  <div class="wt-card wt-card--wide wt-delay-2">
+                        <div class="wt-card-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <h4>First Win, Fast</h4>
+                        <p>Your first working improvement in days — not a proposal, a result.</p>
+                        <div class="wt-card-glow"></div>
+                  </div>
+            </div>
+
+            <!-- Middle row: 3 equal cards -->
+            <div class="wt-row wt-row-mid">
+                  <div class="wt-card wt-delay-3">
+                        <div class="wt-card-icon"><i class="fa-solid fa-stethoscope"></i></div>
+                        <h4>Free Business &amp; Technology Health Check</h4>
+                        <p>Discovery sessions including workshops to identify the gaps.</p>
+                        <div class="wt-card-glow"></div>
+                  </div>
+                  <div class="wt-card wt-delay-4">
+                        <div class="wt-card-icon"><i class="fa-solid fa-eye"></i></div>
+                        <h4>Show, Don't Tell</h4>
+                        <p>Ask for a working demo before you spend a pound: we'll rather prove it than pitch it.</p>
+                        <div class="wt-card-glow"></div>
+                  </div>
+                  <div class="wt-card wt-delay-5">
+                        <div class="wt-card-icon"><i class="fa-solid fa-sterling-sign"></i></div>
+                        <h4>Accountable to Revenue</h4>
+                        <p>If we can't show you what your money earned, you shouldn't be spending it with us.</p>
+                        <div class="wt-card-glow"></div>
+                  </div>
+            </div>
+
+            <!-- Bottom row: 3 equal cards -->
+            <div class="wt-row wt-row-mid">
+                  <div class="wt-card wt-delay-6">
+                        <div class="wt-card-icon"><i class="fa-solid fa-tag"></i></div>
+                        <h4>First-Principles Pricing</h4>
+                        <p>We quote the problem, not the hours — and the number never surprises you.</p>
+                        <div class="wt-card-glow"></div>
+                  </div>
+                  <div class="wt-card wt-delay-7">
+                        <div class="wt-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h4>The Anti-Agency</h4>
+                        <p>No lock-in, no jargon, no vanity reports — you own everything, always.</p>
+                        <div class="wt-card-glow"></div>
+                  </div>
+                  <div class="wt-card wt-delay-8">
+                        <div class="wt-card-icon"><i class="fa-solid fa-handshake"></i></div>
+                        <h4>Engineers You Can Meet</h4>
+                        <p>Serious engineering, real accountability — a handshake, not a ticket number.</p>
+                        <div class="wt-card-glow"></div>
+                  </div>
+            </div>
+
+            <!-- FOCAL CARD: One Partner, Zero Handoffs -->
+            <div class="wt-focal-card wt-delay-9">
+                  <div class="wt-focal-inner">
+                        <div class="wt-focal-icon-wrap">
+                              <i class="fa-solid fa-circle-nodes"></i>
+                        </div>
+                        <div class="wt-focal-text">
+                              <h3>One Partner, Zero Handoffs</h3>
+                              <p>One WhatsApp number reaches your developer, your marketer, and your IT support.</p>
+                        </div>
+                        <a href="javascript:void(0)" class="wt-focal-btn">
+                              Start a conversation
+                              <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                  </div>
+                  <div class="wt-focal-ring"></div>
+                  <div class="wt-focal-ring wt-focal-ring--2"></div>
+            </div>
+
+      </div>
+</div>
+
+<!-- ==========================================================================
+     05d / HOW WE WORK SECTION
+     ========================================================================== -->
+<div id="how-we-work">
+      <div class="how-we-work-container">
+            <div class="hww-header">
+                  <div class="hww-header-left">
+                        <p class="hww-tagline">
+                              <span class="line"></span>
+                              04 / HOW WE WORK
+                        </p>
+                        <p class="hww-sub">
+                              You stay involved, the scope stays clear, and the<br>work keeps moving.
+                        </p>
+                  </div>
+                  <div class="hww-header-right">
+                        <h2 class="hww-title">
+                              Simple process.<br>
+                              Serious engineering.
+                        </h2>
+                  </div>
+            </div>
+
+            <div class="hww-grid">
+                  <!-- Step 1 -->
+                  <div class="hww-col">
+                        <span class="hww-step-num">01</span>
+                        <div class="hww-col-body">
+                              <h3 class="hww-col-title">Discover</h3>
+                              <p class="hww-col-desc">Understand the business, the people and the real problem.</p>
+                        </div>
+                  </div>
+
+                  <!-- Step 2 -->
+                  <div class="hww-col">
+                        <span class="hww-step-num">02</span>
+                        <div class="hww-col-body">
+                              <h3 class="hww-col-title">Design</h3>
+                              <p class="hww-col-desc">Turn the problem into a practical technical direction.</p>
+                        </div>
+                  </div>
+
+                  <!-- Step 3 -->
+                  <div class="hww-col">
+                        <span class="hww-step-num">03</span>
+                        <div class="hww-col-body">
+                              <h3 class="hww-col-title">Build</h3>
+                              <p class="hww-col-desc">Engineer the solution with regular progress and feedback.</p>
+                        </div>
+                  </div>
+
+                  <!-- Step 4 -->
+                  <div class="hww-col">
+                        <span class="hww-step-num">04</span>
+                        <div class="hww-col-body">
+                              <h3 class="hww-col-title">Launch</h3>
+                              <p class="hww-col-desc">Put the solution into the real world and make the transition
+                                    smooth.</p>
+                        </div>
+                  </div>
+
+                  <!-- Step 5 -->
+                  <div class="hww-col">
+                        <span class="hww-step-num">05</span>
+                        <div class="hww-col-body">
+                              <h3 class="hww-col-title">Improve</h3>
+                              <p class="hww-col-desc">Keep supporting, refining and evolving what we built.</p>
+                        </div>
+                  </div>
+            </div>
+      </div>
+</div>
+
+<!-- ==========================================================================
+     FLAGSHIP PRODUCT SPOTLIGHT: AITRION (LESSER WIDTH, GAP BEFORE CONNECT)
+     ========================================================================== -->
+<div id="aitrion-section">
+      <div id="aitrion">
+            <!-- Cosmic Ambient Glows -->
+            <div class="aitrion-glow-core"></div>
+            <div class="aitrion-glow-accent"></div>
+
+            <div class="aitrion-inner">
+
+                  <!-- Brand Header -->
+                  <div class="aitrion-brand-wrap">
+                        <div class="aitrion-logo">
+                              <span class="aitrion-logo-text">A<span class="aitrion-logo-accent">i<span class="aitrion-gem-sparkle"></span></span>trion</span>
+                        </div>
+                        <div class="aitrion-badge">
+                              <span class="aitrion-beacon">
+                                    <span class="beacon-core"></span>
+                                    <span class="beacon-wave"></span>
+                              </span>
+                              <span class="aitrion-badge-text">NEW 2025 &bull; OUR AI WING</span>
+                        </div>
+                  </div>
+
+                  <!-- Headline -->
+                  <h2 class="aitrion-headline">
+                        <span class="headline-talk-to">Software you talk to.</span>
+                        <span class="headline-navigate">Not software you navigate.</span>
+                  </h2>
+
+                  <!-- Description -->
+                  <p class="aitrion-subtext">
+                        Aitrion is our independent AI brand: AI-native business software where conversation is the interface. Self-hosted or private cloud, UK GDPR compliant, and built to plug into Sage 200, Dynamics 365, and the systems you already run.
+                  </p>
+
+                  <!-- Interactive Animated Pills -->
+                  <div class="aitrion-pills">
+                        <div class="aitrion-pill pill-float-1">
+                              <i class="fa-solid fa-lock"></i>
+                              <span>Self-hosted or private cloud</span>
+                        </div>
+                        <div class="aitrion-pill pill-float-2">
+                              <i class="fa-solid fa-shield-halved"></i>
+                              <span>UK GDPR compliant</span>
+                        </div>
+                        <div class="aitrion-pill pill-float-3">
+                              <i class="fa-solid fa-bolt"></i>
+                              <span>Sage 200 &amp; Dynamics 365</span>
+                        </div>
+                  </div>
+
+                  <!-- Action Buttons -->
+                  <div class="aitrion-cta-wrap">
+                        <a href="https://aitrion.ai" target="_blank" rel="noopener noreferrer" class="btn-aitrion-white">
+                              <span class="btn-shine-sweep"></span>
+                              <span class="btn-label">Visit aitrion.ai</span>
+                              <span class="btn-arrow-diag">&nearr;</span>
+                        </a>
+                        <a href="#letstalk" class="btn-aitrion-glass">
+                              <span>Book a demo</span>
+                        </a>
+                  </div>
+
+            </div>
+      </div>
+</div>
+
+<!-- ==========================================================================
+     06 / LET'S TALK SECTION
+     ========================================================================== -->
+<div id="letstalk">
+      <div class="letstalk-container">
+            <div class="letstalk-content">
+                  <div class="letstalk-left">
+                        <span class="letstalk-badge">06 / LET'S TALK</span>
+                        <h1 class="letstalk-title">
+                              Got a problem?<br>
+                              Let's talk it<br>
+                              through.
+                        </h1>
+                  </div>
+                  <div class="letstalk-right">
+                        <p class="letstalk-desc">
+                              Tell us what's slowing your business down. Start with the problem and we'll work out the
+                              technology together.
+                        </p>
+                        <a href="javascript:void(0)" class="btn-letstalk">
+                              <span>Start a conversation</span>
+                              <span class="btn-diagonal-arrow">&nearr;</span>
+                        </a>
+                  </div>
+            </div>
+      </div>
+</div>
+
+<!-- ==========================================================================
+     FOOTER SECTION
+     ========================================================================== -->
+<footer id="site-footer">
+      <div class="footer-watermark">TrinitySoft</div>
+      <div class="footer-container">
+            <!-- Col 1: Brand & Bio -->
+            <div class="footer-col footer-brand-col">
+                  <div class="footer-brand">
+                        <img src="https://res.cloudinary.com/djha4r2ys/image/upload/v1791125938/image-removebg-preview_1_fsnyxh.png"
+                              alt="TrinitySoft Logo" class="footer-logo-img" />
+                  </div>
+                  <p class="footer-bio">
+                        Custom software and IT solutions made around the way your business works.
+                  </p>
+            </div>
+
+            <!-- Col 2: Services -->
+            <div class="footer-col footer-links-col">
+                  <h4 class="footer-heading">SERVICES</h4>
+                  <ul class="footer-links">
+                        <li><a href="javascript:void(0)">Application Development</a></li>
+                        <li><a href="javascript:void(0)">Managed IT Services</a></li>
+                        <li><a href="javascript:void(0)">IT Consulting</a></li>
+                        <li><a href="javascript:void(0)">Product Engineering</a></li>
+                  </ul>
+            </div>
+
+            <!-- Col 3: Contact -->
+            <div class="footer-col footer-contact-col">
+                  <h4 class="footer-heading">CONTACT</h4>
+                  <ul class="footer-links">
+                        <li><a href="mailto:hello@trinitysoft.co.uk">hello@trinitysoft.co.uk</a></li>
+                        <li><a href="tel:01727226111">01727 226111</a></li>
+                        <li><a href="javascript:void(0)">Start a conversation</a></li>
+                  </ul>
+            </div>
+      </div>
+</footer>

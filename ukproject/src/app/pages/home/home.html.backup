@@ -1,0 +1,172 @@
+<div id="hero">
+      <div id="hero-one">
+            <p class="tagline">
+                  <span class="line"></span>
+                  SOFTWARE.SYSTEM.AI
+            </p>
+            <h1>Your</h1>
+            <h1>problems.</h1>
+            <h1 style="color:navy">Solved.</h1>
+            <h1>With</h1>
+            <h1>technology.</h1>
+
+            <div class="hero-actions">
+                  <button class="btn-primary">
+                        <span>Start conversation</span>
+                        <svg class="btn-arrow" viewBox="0 0 24 24" width="15" height="15" fill="none"
+                              stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                              <line x1="7" y1="17" x2="17" y2="7"></line>
+                              <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                  </button>
+                  <button class="btn-secondary">
+                        <span>Explore what we do</span>
+                        <svg class="btn-arrow" viewBox="0 0 24 24" width="15" height="15" fill="none"
+                              stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                              <line x1="12" y1="5" x2="12" y2="19"></line>
+                              <polyline points="19 12 12 19 5 12"></polyline>
+                        </svg>
+                  </button>
+            </div>
+      </div>
+      <div id="hero-two">
+            <div id="hero-two-left">
+                  <p>TrinitySoft builds, modernises and supports the technology behind growing businesses — from custom
+                        software and systems integration to automation, AI and managed IT.</p>
+            </div>
+            <div id="hero-two-right">
+                  <div class="idea-box">
+                        <h3>The Idea.</h3>
+                        <p>Technology shouldn't create another problem to manage. It should remove the problem you
+                              already have.</p>
+                  </div>
+            </div>
+
+      </div>
+</div>
+
+<div id="trustedby">
+      <div class="trusted-header">
+            <span class="line"></span>
+            <span class="red-dot"></span>
+            <p>Trusted By</p>
+      </div>
+
+      <div class="marquee-wrapper">
+            <div class="marquee-track">
+                  <!-- First set -->
+                  <div class="marquee-item"><span class="dot"></span> Carfax</div>
+                  <div class="marquee-item"><span class="dot"></span> Govinda's</div>
+                  <div class="marquee-item"><span class="dot"></span> MRIScanlondon</div>
+                  <div class="marquee-item"><span class="dot"></span> Main Line</div>
+                  <div class="marquee-item"><span class="dot"></span> PlumPoT Media</div>
+                  <div class="marquee-item"><span class="dot"></span> Sterling Corporation</div>
+                  <div class="marquee-item"><span class="dot"></span> IStone</div>
+                  <div class="marquee-item"><span class="dot"></span> Spatial Hawk</div>
+                  <div class="marquee-item"><span class="dot"></span> RMGL</div>
+                  <div class="marquee-item"><span class="dot"></span> Rao Bar & Resturant</div>
+
+                  <!-- Duplicate set for seamless loop -->
+                  <div class="marquee-item"><span class="dot"></span> Carfax</div>
+                  <div class="marquee-item"><span class="dot"></span> Govinda's</div>
+                  <div class="marquee-item"><span class="dot"></span> MRIScanlondon</div>
+                  <div class="marquee-item"><span class="dot"></span> Main Line</div>
+                  <div class="marquee-item"><span class="dot"></span> PlumPoT Media</div>
+                  <div class="marquee-item"><span class="dot"></span> Sterling Corporation</div>
+                  <div class="marquee-item"><span class="dot"></span> IStone</div>
+                  <div class="marquee-item"><span class="dot"></span> Spatial Hawk</div>
+                  <div class="marquee-item"><span class="dot"></span> RMGL</div>
+                  <div class="marquee-item"><span class="dot"></span> Rao Bar & Resturant</div>
+            </div>
+      </div>
+</div>
+<div id="theproblem">
+      <div id="theproblem-top">
+            <div id="tagline-left">
+                  <div id="tagline">
+                        <p class="tagline1">
+                              <span class="line"></span>
+                              01 The Problem
+                        </p>
+                  </div>
+                  <div id="tagline-bottom">
+                        <p> But disconnected systems, manual processes and outdated software can quietly make business
+                              harder than it needs to be.</p>
+                  </div>
+            </div>
+            <div id="tagline-right">
+                  <h1>Technology Should<br>Make work easier.</h1>
+
+
+            </div>
+
+
+      </div>
+</div>
+
+<div id="theproblem-bottom">
+      <div class="theproblems" *ngFor="let item of problems; let i = index" [class.active]="activeProblemIndex === i"
+            (click)="toggleProblem(i)" (mouseenter)="onHover(i)">
+            <div class="problem-header">
+                  <span class="problem-number">{{ item.number }}</span>
+                  <h3 class="problem-title">{{ item.title }}</h3>
+                  <span class="problem-arrow" [class.rotated]="activeProblemIndex === i">+</span>
+            </div>
+            <div class="problem-matter" *ngIf="activeProblemIndex === i">
+                  <p><span style="color:navy;font-weight:500">Solution: </span>{{ item.matter }}</p>
+            </div>
+      </div>
+</div>
+
+<div id="whatwedo">
+      <div id="whatwedo-top">
+            <div id="tagline-left">
+                  <div id="tagline">
+                        <br>
+                        <br>
+                        <p class="tagline1">
+                              <span class="line"></span>
+                              02 What We Do
+                        </p>
+                  </div>
+                  <br><br><br>
+                  <div id="tagline-bottom">
+                        <p>We build, modernise and support the technology behind growing businesses custom software,
+                              integrations and AI.</p>
+                  </div>
+            </div>
+            <div id="tagline-right">
+                  <h1>One technology <br>partner. Many ways to<br> move forward.</h1>
+            </div>
+      </div>
+</div>
+<div id="whatwedodevlop">
+      <div id="whatwedodevlop-top">
+            <div id="mobileandappdevlop">
+                  <div id="mobileleandappdevlopleft">
+                        <div id="mobiletop">
+
+                        </div>
+                        <div id="mobilebottom">
+
+                        </div>
+                  </div>
+                  <div id="mobileleandappdevlopright">
+                        <div id="mobilebesidetop"></div>
+                        <div id="mobilebesidebottom"></div>
+                  </div>
+
+
+            </div>
+            <div id="besidemobileandappdevlop">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam asperiores quas est necessitatibus
+                  animi fugiat sit nesciunt facilis officia, harum dolores atque hic alias perspiciatis id ullam?
+                  Aliquam, culpa ut?
+            </div>
+
+
+
+      </div>
+      <div id="whatwedevlop-bottom"></div>
+
+</div>
